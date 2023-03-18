@@ -479,9 +479,6 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
-
 .customers-organisation:hover,
 .customers-organisation:focus {
     border-color: #404BBF;
@@ -588,19 +585,12 @@ footer {
     cursor: pointer;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    /* transition-property: <властивість>  */
-    /* transition-delay: <затримка>  */
-
-
 }
 
 .media-list:hover,
 .media-list:focus {
     background-color: #31D0AA;
     fill: #404BBF;
-
-
 }
 
 .footer-icon {
@@ -608,6 +598,56 @@ footer {
     align-items: center;
     fill: #FFFFFF;
 }
+
+
+
+
+.subscribe {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.subscribe-form {
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.subscribe-icon {
+    fill: #FFFFFF;
+
+}
+
+.subscribe-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+    border-radius: 4px;
+    border: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ============================== Backdrop ================================== */
 
@@ -660,6 +700,49 @@ footer {
     border-radius: 50%;
     fill: #2E2F42;
 }
+
+.contact-form {
+    display: block;
+    /* display: flex; */
+}
+
+.contact-form-imput {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.send-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+}
+
+.send-btn:hover,
+.send-btn:focus {
+    background-color: var(--color-button-hover);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
