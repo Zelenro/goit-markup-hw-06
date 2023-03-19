@@ -426,58 +426,77 @@
             <use href="./images/icons.svg#icon-close-modal-btn"></use>
           </svg>
         </button>
-        <div>
-          <form action="" class="contact-form">
-            <legend>Leave your contacts and we will call you back</legend>
-            <ul>
-              <li>
-                <label for=""
-                  >Name<input
+
+        
+          
+        
+        <form  class="contact-form">
+<legend class="legend">Leave your contacts and we will call you back</legend>
+<!-- <div class="form-wrap"> -->
+                 <label class="contact-form-item" for=""
+                  >Name<input class="contact-form-imput"
                     type="text"
-                    placeholder="fffdsfds"
+                    placeholder=""
                     name="name"
-                    class="contact-form-imput"
+                    required
+                    minlength="3"
+                    pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
                 /><svg class="contact-icon" width="24px" height="24px">
                 <use href="./images/icons.svg#icon-person"></use></label>
-              </li>
-              <li>
-                <label for=""
-                  >Phone<input
+           
+                <label class="contact-form-item" for=""
+                  >Phone<input class="contact-form-imput"
                     type="tel"
-                    placeholder="fdfs"
+                    placeholder=""
                     name="phone"
-                    class="contact-form-imput"
+                    required
+                    minlength="3"
+                    pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$"
+                    title="xxx-xxx-xx-xx"
                 /><svg class="contact-icon" width="24px" height="24px">
                 <use href="./images/icons.svg#icon-phone"></use></label>
-              </li>
-              <li>
-                <label for=""
-                  >Email<input
+           
+                <label class="contact-form-item" for=""
+                  >Email<input class="contact-form-imput"
                     type="email"
-                    placeholder="vsv"
+                    placeholder=""
                     name="email"
-                    class="contact-form-imput"
+                    required
+                    minlength="3"
+                             
                 /> <svg class="contact-icon" width="24px" height="24px">
                 <use href="./images/icons.svg#icon-email"></use></label>
-              </li>
-              <li>
-                <label for=""
-                  >Comment<input
+                
+                
+
+
+                <label class="contact-form-item contact-form-massage" for=""
+                  >Comment<input class="contact-form-imput contact-massage-imput"
                     type="text"
                     placeholder="Text input"
                     name="comment"
-                    class="contact-form-imput"
-                /></label>
-              </li>
-              <label for=""
-                ><input type="checkbox" />I accept the terms and conditions of the Privacy
+                    required
+                    minlength="3"
+                    /></label>
+            
+
+
+
+              <label class="checkbox-form-item" for=""
+                ><input class="checkbox-form-imput"
+                type="checkbox" 
+                placeholder="Text input"
+                name="comment"
+                required
+                />I accept the terms and conditions of the Privacy
                 Policy</label
               >
-            </ul>
-
-            <button type="button" class="send-btn">Send</button>
-          </form>
-        </div>
+<!-- </div> -->
+              <button type="submit" class="send-btn">Send</button>
+              
+              
+            </form>
+        
       </div>
     </div>
     <script src="./js/modal.js"></script>
