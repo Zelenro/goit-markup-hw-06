@@ -621,6 +621,7 @@ footer {
 
 .subscribe-form {
     display: block;
+    outline: none;
     width: 264px;
     height: 40px;
     font-weight: 500;
@@ -793,7 +794,6 @@ footer {
 .contact-form-imput:focus {
     outline: none;
     border-color: #4D5AE5;
-    ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
