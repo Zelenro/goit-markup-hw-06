@@ -534,27 +534,30 @@
             </li>
           </ul>
         </div>
-        <div>
-          <span>
-            <form class="form-subscribe-wrapper">
-              <label class="subscribe">
-                <span class="form-subscribe"
-                  >Subscribe
-                  <input
-                    class="subscribe-form"
-                    type="email"
-                    name="email"
-                    placeholder="E-mail"
-                /></span>
-              </label>
 
-              <button class="subscribe-btn" type="button" name="submit">
-                Subscribe<svg class="subscribe-icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-frame"></use>
-                </svg>
-              </button></form
-          ></span>
-        </div>
+        <!-- /* /=====================** Form Subscribe **=====================/ */ -->
+
+        <form class="form-subscribe-wrapper">
+          <label>
+            <span class="form-subscribe">Subscribe</span>
+            <span class="form-subscribe-email"
+              ><input
+                class="subscribe-form"
+                type="email"
+                placeholder="E-mail"
+                name="email"
+                required
+                minlength="3"
+            /></span>
+          </label>
+
+          <button class="subscribe-btn" type="button" name="submit">
+            Subscribe<span class="subscribe-icon-wrapper"
+              ><svg class="subscribe-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-frame"></use></svg
+            ></span>
+          </button>
+        </form>
       </div>
     </footer>
 
@@ -581,11 +584,8 @@
                 name="name"
                 required
                 minlength="3"
-                pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$" /><svg
-                class="contact-icon"
-                width="24px"
-                height="24px"
-              >
+                pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$" />
+              <svg class="contact-icon" width="24px" height="24px">
                 <use href="./images/icons.svg#icon-person"></use></svg></span
           ></label>
 

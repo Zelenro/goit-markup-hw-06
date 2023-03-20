@@ -606,47 +606,49 @@ footer {
 
 .form-subscribe-wrapper {
     display: flex;
-    flex-direction: column;
-
-    /* flex-direction: column; */
-    /* display: block; */
-    /* height: 40px; */
 }
 
 .form-subscribe {
-    /* display: flex; */
-
-}
-
-.form-subscribe {
-    /* display: flex; */
-
-}
-
-.subscribe {
     display: block;
-    /* flex-direction: column; */
-    padding: 0px 0px 0px 0px;
-    height: 40px;
+    margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+
 }
 
 .subscribe-form {
+    display: block;
+    width: 264px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-right: 24px;
     border: 1px solid #FFFFFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    padding-left: 16px;
+
+}
+
+.subscribe-icon-wrapper {
+    position: relative;
 }
 
 .subscribe-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translate(0, -50%);
     fill: #FFFFFF;
 }
 
 .subscribe-btn {
-    display: block;
     width: 165px;
     height: 40px;
     font-weight: 500;
@@ -660,10 +662,20 @@ footer {
     background-color: #4D5AE5;
     border-radius: 4px;
     border: transparent;
-    margin: 20px 20px 20px 20px;
+    margin: 40px 0px 0px 0px;
+    padding-left: 24px;
 }
 
-..subscribe-btn:hover
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: var(--color-button-hover);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
 /* ============================== Backdrop ================================== */
 
 .backdrop {
