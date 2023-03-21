@@ -713,7 +713,7 @@ footer {
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 24px;
-    padding-top: 24px;
+    /* padding-top: 24px; */
 }
 
 .modal-close-btn {
@@ -721,8 +721,8 @@ footer {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 24px;
+    right: 24px;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -753,7 +753,7 @@ footer {
 }
 
 .legend {
-    padding-top: 48px;
+    padding-top: 72px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 24px;
@@ -889,9 +889,11 @@ footer {
 
 .send-btn:hover,
 .send-btn:focus {
-    background-color: var(--color-button-hover);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    border-color: transparent;
+    /* background-color: var(--color-button-hover); */
+    /* transition-duration: 250ms; */
+    /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 
