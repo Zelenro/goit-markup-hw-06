@@ -842,82 +842,74 @@ footer {
     color: #2E2F42;
 }
 
-
-
 .checkbox-form-wrapper {
     position: relative;
+    display: block;
     margin-bottom: 24px;
+
+}
+
+.check-input {
+    position: absolute;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+/* .check-box {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+
+    background-image: url('data:image/svg+xml,%3Csvg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Crect x="0.5" y="0.5" width="15" height="15" rx="1.5" stroke="%232E2F42" stroke-opacity="0.4"/%3E%3C/svg%3E');
+}
+
+.check-input:checked+.check-box {
+    background-image: url(../svg/on.svg);} */
+
+.off-input {
+    position: absolute;
+    /* display: none; */
+}
+
+.on-input {
+    position: absolute;
+    /* display: none; */
+}
+
+.check-box {
+    position: absolute;
+}
+
+.check-input+.on-input {
+    /* display: none; */
+}
+
+.check-input:checked+.on-input {
+    /* display: none; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.privat-policy-check {
+    position: absolute;
+    padding-left: 24px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
 }
-
-
-
-.checkbox-form-wrapper {
-    position: relative;
-}
-
-.option {
-    /* display: block; */
-}
-
-.check {}
-
-.check-input {
-    position: absolute;
-    visibility: hidden;
-    /* -moz-appearance: none; */
-    /* -webkit-appearance: none; */
-    /* appearance: none; */
-}
-
-.check-icon {
-    width: 16px;
-    height: 16px;
-    background-image: url(../images/icons.svg#icon-checkbox);
-}
-
-.check-icon-click {
-    width: 16px;
-    height: 16px;
-    background-image: url(../images/icons.svg#icon-checkbox-click);
-}
-
-.check-box {
-    /* position: absolute; */
-    /* background-color: tomato; */
-    /* width: 16px; */
-    /* height: 16px; */
-}
-
-.check-icon {
-    /* fill: transparent; */
-    /* position: absolute; */
-
-    /* fill: #404BBF; */
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    /* border-color: #404BBF; */
-}
-
-.check-input:checked+.check-icon-click {
-    background-image: url(../images/icons.svg#icon-checkbox);
-}
-
-.check-box:focus+.check-icon-click {
-    /* fill: none; */
-    /* background-image: url(../images/icons.svg#icon-checkbox-click) */
-}
-
-
-.label-checkbox {
-    position: absolute;
-    padding-left: 24px;
-}
-
 
 .privat-policy {
     color: #4D5AE5;
