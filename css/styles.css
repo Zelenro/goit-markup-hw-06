@@ -868,29 +868,42 @@ footer {
 .check-input:checked+.check-box {
     background-image: url(../svg/on.svg);} */
 
+
 .off-input {
     position: absolute;
-    /* display: none; */
+    width: 16px;
+    height: 16px;
+    fill: #FFFFFF;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+
 }
 
 .on-input {
     position: absolute;
-    /* display: none; */
-}
-
-.check-box {
-    position: absolute;
-}
-
-.check-input+.on-input {
-    /* display: none; */
-}
-
-.check-input:checked+.on-input {
-    /* display: none; */
+    width: 16px;
+    height: 16px;
+    /* background: #404BBF; */
+    /* border: 1px solid #404BBF; */
+    /* border-radius: 2px; */
 }
 
 
+.check-input~.off-input {
+    display: block;
+}
+
+.check-input:checked~.off-input {
+    display: none;
+}
+
+.check-input~.on-input {
+    display: none;
+}
+
+.check-input:checked~.on-input {
+    display: block;
+}
 
 
 
